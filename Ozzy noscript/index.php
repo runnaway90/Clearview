@@ -6,12 +6,8 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Clearview is a platform for bla bla blas" />
-    <meta name="keywords" content="student, societies, Edinburgh" />
-<<<<<<< HEAD
-    <title>Clearview | some page | maria | and stuff| cookies suck for a change</title> 
-=======
-    <title>Clearview | some page | maria | and stuff| cookies do not rule so much!!!!	</title> 
->>>>>>> 9ae01f153c2ba97d385b1dc9a1bcbd4b37b43f17
+    <meta name="keywords" content="student, societies, Edinburgh" />
+    <title>Clearview | some page | maria | and stuff| cookies do not rule so much!!!!	</title> 
     <link rel="stylesheet" href="style.css" type="text/css" />
     <?php		// sample comment
         if (isset($_GET['l'])) {
@@ -58,22 +54,18 @@
     </div>
 
     <!-- HEADER START -->
-    <div id="header">		<div id="home">		I LOOOOOVE COOKIES!! vERRY MUVCJ!!! <3	</div>
-    
+    <div id="header">
+	
 
       <div id="home">
         <a href="index.php" tabindex="20">Homeless</a>
+
       </div>
-      
-<<<<<<< HEAD
-      <div class="personal">
-=======
-      <div id="pers" class="bla">
->>>>>>> 18766f09b1e6d96a741716b59da239b7710bf6b5
+      <div id="pers" class="bla">
         <?php 
-          if (!isset($_GET['WWWW'])) { 
-            if ($_GET['WWWW'] != 'personal') {
-              print 'books.php';
+          if (isset(something that's not right blah blah blah$_GET['l'])) { 
+            if ($_GET['l'] != 'autopers') {
+              include 'booksstufff.php';
             }
           }
         ?>
