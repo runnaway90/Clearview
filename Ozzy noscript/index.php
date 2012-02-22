@@ -54,7 +54,7 @@
     </div>
 
     <!-- HEADER START -->
-    <div id="header">		<div id="home">		I LOOOOOVE COOKIES!! vERRY MUVCJ!!! <3	</div>
+    <div id="header">		<div id="home">		I LOOOOOVE COOKIES!!  me too!!!!!!		vERRY MUVCJ!!! <3	</div>
     
 
       <div id="home">
