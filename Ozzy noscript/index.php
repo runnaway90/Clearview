@@ -56,13 +56,9 @@
     <!-- HEADER START -->
     <div id="header">
     
-<<<<<<< HEAD
-      <div id="home1">
-        <a href="index56.php" tabindex="10">Homesick</a>
-=======
-      <div id="home">
-        <a href="in.php" tabindex="20">Homeless</a>
->>>>>>> cf2bed37e4f4dd7d6e8b6abae484fae2c3f093a8
+
+      <div id="home">
+        <a href="index.php" tabindex="20">Homeless</a>
       </div>
       
       <div id="pers">
