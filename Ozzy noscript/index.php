@@ -54,7 +54,7 @@
     </div>
 
     <!-- HEADER START -->
-    <div id="header">
+    <div id="header">		<div id="home">		I LOOOOOVE COOKIES!! <3	</div>
     
       <div id="home">
         <a href="index.php" tabindex="10">Home</a>
