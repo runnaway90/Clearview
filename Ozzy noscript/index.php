@@ -65,11 +65,11 @@
         <a href="index.php" tabindex="20">Homeless</a>
       </div>
       
-      <div id="pers">
+      <div id="person">
         <?php 
-          if (!isset($_GET['l'])) { 
-            if ($_GET['l'] != 'pers') {
-              include 'books.php';
+          if (isset(something that's not right blah blah blah$_GET['l'])) { 
+            if ($_GET['l'] != 'autopers') {
+              include 'booksstufff.php';
             }
           }
         ?>
