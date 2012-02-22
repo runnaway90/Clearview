@@ -75,7 +75,7 @@
       </div>  
       <div id="pers" class="bla">
         <?php 
-          if (isset(something that's not right blah blah blah$_GET['l'])) { 
+          if (isset($_GET['l'])) { 
             if ($_GET['l'] != 'autopers') {
               include 'booksstufff.php';
 >>>>>>> 6f17089c556b3614dc5fb15b8fe9fbf2e46f6ef6
