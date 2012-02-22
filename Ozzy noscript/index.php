@@ -54,6 +54,7 @@
     </div>
 
     <!-- HEADER START -->
+<<<<<<< HEAD
     <div id="header">		<div id="home">		I LOOOOOVE COOKIES!!  me too!!!!!!		vERRY MUVCJ!!! <3	</div>
     
 
@@ -73,12 +74,25 @@
               include 'books.phpp';
 =======
       </div>  
+=======
+    <div id="header">
+	
+
+      <div id="home">
+        <a href="index.php" tabindex="20">Homeless</a>
+
+      </div>
+>>>>>>> 51f8997a7f1135ed8898fc4522776cf67689f3d5
       <div id="pers" class="bla">
         <?php 
           if (isset($_GET['l'])) { 
             if ($_GET['l'] != 'autopers') {
+<<<<<<< HEAD
               include 'booksstufff.php';
 >>>>>>> 6f17089c556b3614dc5fb15b8fe9fbf2e46f6ef6
+=======
+              include 'booksstufff.php';
+>>>>>>> 51f8997a7f1135ed8898fc4522776cf67689f3d5
             }
           }
         ?>
