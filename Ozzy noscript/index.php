@@ -7,9 +7,9 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Clearview is a platform for bla bla blas" />
     <meta name="keywords" content="student, societies, Edinburgh" />
-    <title>Clearview | some page</title> 
+    <title>Clearview | some page | maria</title> 
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <?php
+    <?php		// sample comment
         if (isset($_GET['l'])) {
           if ($_GET['l']=='pers') {
             function showContent () {
@@ -50,14 +50,19 @@
   <body>
     
     <div id="userBox"> 
-        <div>Hello, temp user!</div>
+        <div>Hello, temp!</div>
     </div>
 
     <!-- HEADER START -->
     <div id="header">		<div id="home">		I LOOOOOVE COOKIES!! vERRY MUVCJ!!! <3	</div>
     
+<<<<<<< HEAD
+      <div id="home1">
+        <a href="index56.php" tabindex="10">Homesick</a>
+=======
       <div id="home">
-        <a href="index.php" tabindex="10">Home</a>
+        <a href="in.php" tabindex="20">Homeless</a>
+>>>>>>> cf2bed37e4f4dd7d6e8b6abae484fae2c3f093a8
       </div>
       
       <div id="pers">
