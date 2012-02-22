@@ -7,7 +7,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Clearview is a platform for bla bla blas" />
     <meta name="keywords" content="student, societies, Edinburgh" />
-    <title>Clearview | some something</title> 
+    <title>Clearview | some </title> 
     <link rel="stylesheet" href="style.css" type="text/css" />
     <?php
         if (isset($_GET['l'])) {
