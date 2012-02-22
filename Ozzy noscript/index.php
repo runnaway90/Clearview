@@ -65,7 +65,11 @@
         <a href="index.php" tabindex="20">Homeless</a>
       </div>
       
+<<<<<<< HEAD
       <div class="personal">
+=======
+      <div id="pers" class="bla">
+>>>>>>> 18766f09b1e6d96a741716b59da239b7710bf6b5
         <?php 
           if (!isset($_GET['WWWW'])) { 
             if ($_GET['WWWW'] != 'personal') {
