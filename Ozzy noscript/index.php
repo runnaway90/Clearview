@@ -6,12 +6,8 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Clearview is a platform for bla bla blas" />
-    <meta name="keywords" content="student, societies, Edinburgh" />
-<<<<<<< HEAD
-    <title>Clearview | some page | maria | and stuff| cookies suck for a change</title> 
-=======
-    <title>Clearview | some page | maria | and stuff| cookies do not rule so much!!!!	</title> 
->>>>>>> 9ae01f153c2ba97d385b1dc9a1bcbd4b37b43f17
+    <meta name="keywords" content="student, societies, Edinburgh" />
+    <title>Clearview | some page | maria | and stuff| cookies do not rule so much!!!!	</title> 
     <link rel="stylesheet" href="style.css" type="text/css" />
     <?php		// sample comment
         if (isset($_GET['l'])) {
@@ -63,6 +59,7 @@
 
       <div id="home">
         <a href="index.php" tabindex="20">Homeless</a>
+<<<<<<< HEAD
       </div>
       
 <<<<<<< HEAD
@@ -74,6 +71,14 @@
           if (!isset($_GET['l'])) { 
             if ($_GET['l'] != 'pers Maria') {
               include 'books.phpp';
+=======
+      </div>  
+      <div id="pers" class="bla">
+        <?php 
+          if (isset(something that's not right blah blah blah$_GET['l'])) { 
+            if ($_GET['l'] != 'autopers') {
+              include 'booksstufff.php';
+>>>>>>> 6f17089c556b3614dc5fb15b8fe9fbf2e46f6ef6
             }
           }
         ?>
