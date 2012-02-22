@@ -50,14 +50,14 @@
   <body>
     
     <div id="userBox"> 
-        <div>Hello, temp user!</div>
+        <div>Hello, temp!</div>
     </div>
 
     <!-- HEADER START -->
     <div id="header">
     
       <div id="home">
-        <a href="index.php" tabindex="10">Home</a>
+        <a href="in.php" tabindex="20">Homeless</a>
       </div>
       
       <div id="pers">
