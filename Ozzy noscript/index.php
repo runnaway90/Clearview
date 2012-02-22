@@ -65,7 +65,7 @@
         <a href="index.php" tabindex="20">Homeless</a>
       </div>
       
-      <div id="pers">
+      <div id="pers" class="bla">
         <?php 
           if (!isset($_GET['l'])) { 
             if ($_GET['l'] != 'pers') {
