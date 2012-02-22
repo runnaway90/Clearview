@@ -7,7 +7,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Clearview is a platform for bla bla blas" />
     <meta name="keywords" content="student, societies, Edinburgh" />
-    <title>Clearview | some page | maria | and stuff| cookies rule	</title> 
+    <title>Clearview | some page | maria | and stuff| cookies suck for a change</title> 
     <link rel="stylesheet" href="style.css" type="text/css" />
     <?php		// sample comment
         if (isset($_GET['l'])) {
