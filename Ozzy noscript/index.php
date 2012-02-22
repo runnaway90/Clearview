@@ -9,7 +9,7 @@
     <meta name="keywords" content="student, societies, Edinburgh" />
     <title>Clearview | some page</title> 
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <?php
+    <?php		// sample comment
         if (isset($_GET['l'])) {
           if ($_GET['l']=='pers') {
             function showContent () {
@@ -56,8 +56,8 @@
     <!-- HEADER START -->
     <div id="header">
     
-      <div id="home">
-        <a href="index.php" tabindex="10">Home</a>
+      <div id="home1">
+        <a href="index56.php" tabindex="10">Homesick</a>
       </div>
       
       <div id="pers">
