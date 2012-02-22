@@ -1,0 +1,15 @@
+.calCell:hover div.over9000 { 
+  display: block; 
+  /*left: 0px;*/
+}
+
+.calCell {
+  padding: 6px;
+}
+
+.calCell .over9000 { 
+  display: none; 
+  /*left: -9001px;*/
+  position: absolute;
+  background-color: #DD8888;
+}
