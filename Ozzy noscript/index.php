@@ -10,7 +10,7 @@
 <<<<<<< HEAD
     <title>Clearview | some page | maria | and stuff| cookies suck for a change</title> 
 =======
-    <title>Clearview | some page | maria | and stuff| cookies do not rule	</title> 
+    <title>Clearview | some page | maria | and stuff| cookies do not rule so much!!!!	</title> 
 >>>>>>> 9ae01f153c2ba97d385b1dc9a1bcbd4b37b43f17
     <link rel="stylesheet" href="style.css" type="text/css" />
     <?php		// sample comment
