@@ -27,7 +27,6 @@ $passwords_match=TRUE;
 $username = '';
 if (isLoggedIn()) 
 	{
-	//echo "Wellcome ".$_SESSION['username'];
 	header('Location: memberzone.php');
 	}
 else
