@@ -1,0 +1,10 @@
+1. Leap year calculation:
+Write a function that takes as an argument the variable and $year writes out a string in the following format: "The year xxxx is a leap year".
+Rules for leap years : A year is a leap year if it is divisible by 4. It is not a leap year however if it is divisible by 100 except those that are divisible by 400.
+
+2. Write a function that takes a number as an argument and will print out the ten previous numbers and say whether they are odd or even.
+Assume that the number given is greater than 10.
+
+Optional : The following question may be more time consuming than the previous ones so if you think it will take too much of your time dont do it :)
+3. Write a functiton that takes an integer as an argument, finds all its divisors, stores them in an array and returns that array.
+Then write a function that prints all items in the array seperated by semicolons.
