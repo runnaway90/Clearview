@@ -6,10 +6,10 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Clearview is a platform for bla bla blas" />
-    <meta name="keywords" content="student, societies, Edinburgh" />
-    <title>Clearview | some page | maria | and stuff| cookies do not rule so much!!!!	</title> 
+    <meta name="keywords" content="student, societies, Edinburgh" />
+    <title>Clearview | some page</title> 
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <?php		// sample comment
+    <?php
         if (isset($_GET['l'])) {
           if ($_GET['l']=='pers') {
             function showContent () {
@@ -50,49 +50,21 @@
   <body>
     
     <div id="userBox"> 
-        <div>Hello, temp!</div>
+        <div>Hello, temp user!</div>
     </div>
 
     <!-- HEADER START -->
-<<<<<<< HEAD
-    <div id="header">		<div id="home">		I LOOOOOVE COOKIES!!  me too!!!!!!		vERRY MUVCJ!!! <3	</div>
+    <div id="header">
     
-
-      <div id="home">
-        <a href="index.php" tabindex="20">Homeless</a>
-<<<<<<< HEAD
+      <div id="home">
+        <a href="index.php" tabindex="10">Home</a>
       </div>
       
-<<<<<<< HEAD
-      <div id="pers Maria lalala">
-=======
-      <div id="pers" class="bla">
->>>>>>> 18766f09b1e6d96a741716b59da239b7710bf6b5
+      <div id="pers">
         <?php 
           if (!isset($_GET['l'])) { 
-            if ($_GET['l'] != 'pers Maria') {
-              include 'books.phpp';
-=======
-      </div>  
-=======
-    <div id="header">
-	
-
-      <div id="home">
-        <a href="index.php" tabindex="20">Homeless</a>
-
-      </div>
->>>>>>> 51f8997a7f1135ed8898fc4522776cf67689f3d5
-      <div id="pers" class="bla">
-        <?php 
-          if (isset($_GET['l'])) { 
-            if ($_GET['l'] != 'autopers') {
-<<<<<<< HEAD
-              include 'booksstufff.php';
->>>>>>> 6f17089c556b3614dc5fb15b8fe9fbf2e46f6ef6
-=======
-              include 'booksstufff.php';
->>>>>>> 51f8997a7f1135ed8898fc4522776cf67689f3d5
+            if ($_GET['l'] != 'pers') {
+              include 'books.php';
             }
           }
         ?>
