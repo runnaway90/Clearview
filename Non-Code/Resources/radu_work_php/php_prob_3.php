@@ -18,7 +18,7 @@
 	}
 	
 	function print_array($array){
-		for ($i = 0; $i < count($array)-1; $i++)
+		for ($i = 0; $i < count($array)-1; $i++) // you can use count or sizeof($array)
 			echo "$array[$i],";
 		echo $array[count($array)-1];
 	}
