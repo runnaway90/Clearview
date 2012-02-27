@@ -1,0 +1,184 @@
+body {
+  overflow-y: scroll; /*->force scrollbar*/
+  margin: 0 auto 0; /*-> centre everything*/
+  width: 840px; /*page width*/
+  font-family: Helvetica, Verdana, sans-serif;
+  font-size: 11pt;
+  background-color: #99AAFF; /*bg colour*/
+}
+
+#userBox {
+  background-color: #F0F0F0; /*elems colour*/
+  height: 32px; /*the 32*/
+  width: 840px; /*page width*/
+  border-bottom-left-radius: 6px; /*radius*/
+  border-bottom-right-radius: 6px; /*radius*/
+}
+  #userBox > div {
+    text-align: center; /*can delete*/
+    padding-top: 6px; /*the 6*/
+  }
+
+#header { 
+  margin-top: 32px; /*the 32*/
+  height: 64px; /*header height*/
+}
+  #home, #pers, #find {
+    float: left; /*-> all on the same line*/
+    background-color: #AADDEE; /*header colour*/
+    height: 64px; /*header height*/
+  }
+  #home {
+    border-top-left-radius: 6px; /*radius*/
+    width: 180px; /*w1*/
+  }
+  #pers {
+    width: 260px; /*w2*/
+  } 
+  #find {
+    border-top-right-radius: 6px; /*radius*/
+    width: 400px; /*w3*/
+  }
+  #home:hover, #pers:hover, #find:hover {
+    background-color: #AACCDD; /*header hover colour*/
+  }
+  
+  #home > a, #pers > a, #find > form {
+    text-align: center; /*centre titles*/
+    padding: 22px 18px 0; /*the 18*/
+  }
+  #home > a, #pers > a {
+    display: block;
+    height: 42px; /*header height - padding*/
+    text-decoration: none;
+    color: #000000; /*header text*/
+    font-weight: bold; /*header text*/
+    font-size: 1.1em; /*header text*/
+  }
+  #pers > #bookmarks { /*when in header*/
+    display: none; /*-> hidden*/
+    position: absolute; /*-> hidden*/
+    margin-top: 64px; /*header height*/
+    margin-left: -180px; /*w1*/
+    z-index: 10; /*-> above others*/
+  }
+  #content > #bookmarks { /*when in content*/
+    margin-left: -32px; /*the 32*/
+    margin-top: -6px; /*the 6*/
+  }
+  #bookmarks {
+    width: 840px; /*page width*/
+  }
+  #pers:hover > #bookmarks {
+    display: block; /*unhide*/
+  }
+  #pers > #bookmarks > div { /*when in header*/
+    background-color: #AACCDD; /*header hover colour*/
+  }
+  #content > #bookmarks > div { /*when in content*/
+   background-color: #DDCCAA;
+  }
+  #bookmarks > div {
+    max-width: 816px; /*page width - 2*padding*/
+    min-width: 236px; /*w2 - 2*padding*/
+    margin: 0 auto; /*aligns to centre*/
+    display: table; /*shrinks to current data*/
+    border-bottom-left-radius: 6px; /*radius*/
+    border-bottom-right-radius: 6px; /*radius*/
+    padding: 6px 12px 6px; /*the 6*/
+  }
+
+  .butt {
+    margin: 2px;
+    border-style: solid;
+    border-width: 1px; 
+    border-radius: 6px; /*radius*/
+    border-color: white;
+    background-color: #99AAFF; /*bg colour*/
+    padding: 6px; /*the 6*/
+    white-space: nowrap; /*don't break button at end of line*/
+    font-size: 1em; /*otherwise it's smaller*/
+  }
+  .butt:hover {
+    border-color: #666666;
+  }
+ 
+  #q {
+    float: left;
+    width: 266px; /*w3 - 2*18 - resw - 2*6 - imgw*/
+    padding: 6px; /*the 6*/
+    height: 22px; /*imgh - 2*padding*/
+  }
+  #q, #search, #reset { 
+    margin-top: -6px; /*the 6*/
+    border: 0; /*delete borders*/
+    color: #000000; /*header text*/
+    font-weight: bold; /*header text*/
+    font-size: 1.1em; /*header text*/
+    background-color: #AADDEE; /*header colour*/
+  }
+  #reset {
+    float: left;
+    width: 34px; /*resw*/
+    height: 34px; /*imgh*/
+    background-image: url('reset.png');
+  }
+  #search {
+    float: right; /*-> stick to right*/
+    width: 52px; /*imgw*/
+    height: 34px; /*imgh*/
+    background-image: url('glass.png');
+  }
+  #find:hover #q, #find:hover #reset, #find:hover #search {
+    background-color: #AACCDD; /*header hover colour*/
+  }
+  #q:focus, #reset:active, #search:active {
+    background-color: #FFFFFF !important; /*input active colour*/
+  }
+  #reset:active, #search:active {
+    /*move buttons down maybe*/
+  }
+  #browses {
+    display: none; /*-> hidden*/
+    position: absolute; /*-> hidden*/
+    margin-top: 64px; /*header height*/
+    margin-left: -440px; /*w1 + w2*/
+    width: 840px; /*page width*/
+    z-index: 10; /*-> above others*/
+  }
+  #find:hover > #browses {
+    display: block; /*unhide*/
+  }
+  #browses > div {
+    float: right; /*-> stick to right and shrink to content*/
+    max-width: 804px; /*page width - 2*padding*/
+    min-width: 364px; /*w3 - 2*padding*/
+    background-color: #AACCDD; /*header hover colour*/
+    border-bottom-left-radius: 6px; /*radius*/
+    border-bottom-right-radius: 6px; /*radius*/
+    padding: 6px 12px 6px; /*the 6*/
+  }
+
+#content {
+  margin-bottom: 32px; /*the 32*/
+  padding: 6px 32px 8px; /*the 32*/
+  background-color: #F0F0F0; /*elems colour*/
+  border-bottom-left-radius: 6px; /*radius*/
+  border-bottom-right-radius: 6px; /*radius*/
+}
+
+#footer {
+  background-color: #F0F0F0; /*elems colour*/
+  width: 840px; /*page width*/
+  border-top-left-radius: 6px; /*radius*/
+  border-top-right-radius: 6px; /*radius*/
+}
+  #footer > div {
+    text-align: center; /*can delete*/
+    padding-top: 6px; /*the 6*/
+    padding-bottom: 6px; /*the 6*/
+  }
+  #validate-xhtml {
+    border: 0; /*otherwise shows in IE*/
+    vertical-align: middle; 
+  }

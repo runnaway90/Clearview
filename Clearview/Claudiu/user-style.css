@@ -1,0 +1,132 @@
+body {
+  overflow-y: scroll; /*force scrollbar*/
+  margin: 0 auto 0; /*center everything*/
+  width: 840px; /*page width*/
+  font-family: Helvetica, Verdana, sans-serif;
+}
+
+div#userBox {
+  background-color: #F0F0F0; /*bg color*/
+  height: 26px;
+  padding-top: 6px; 
+  text-align: center;
+}
+
+div#header { 
+  margin-top: 32px;
+  height: 80px; /*headerHeight*/
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 1.1em;
+  background-color: #666666;
+}
+  div#publ, div#pers, div#goto {
+    height: 52px; /*headerHeight - padding*/
+    float: left; /*keep all on the same line*/
+    padding-top: 28px;
+    text-align: center;
+  }
+  
+  div#publ {
+    width: 180px;
+  }
+  div#pers {
+    width: 260px;
+  } 
+  div#find {
+    float: left; /*keep on the same line*/
+    height: 58px;
+    width: 336px;
+    padding-top: 22px; 
+  }
+  div#findBox {
+    padding: 0 18px 0;
+    height: 58px; /**/
+  }
+  div#goto { 
+    width: 64px;
+  }
+  
+  div#publ:hover, div#pers:hover, div#find:hover, div#goto:hover {
+    background-color: #444444;
+  }
+  div#find:hover input#q {
+    background-color: #222222;
+  }
+
+  div#bookmarkList {
+    display: none;
+    position: absolute;
+    margin-top: 0;
+    width: 840px;
+    margin-left: -180px; /*negative pers width*/
+    background-color: #444444;
+    text-align: left;
+  }
+  div#bookmarkList  ul {
+    list-style-type: none;
+  }
+  div#pers:hover div#bookmarkList {
+    display: block;
+  }
+  li#bookmarkTitle {
+    
+    font-size: 1.3em;
+  }
+  
+  input#q {
+    width: 288px;
+    padding: 6px;
+    border: 0;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.1em;
+    background-color: #666666;
+  }
+  input#q:focus {
+    background-color: #444444;
+  }
+
+  div#browseList {
+    display: none;
+    position: absolute;
+    margin-top: 0;
+    background-color: #444444;
+    width: 336px;
+    margin-left: 0;
+    text-align: left; 
+    padding: 0;
+    z-index: 10;
+  }
+  div#browseList ul {
+    list-style-type: none;
+  }
+  div#browseList ul li {
+    padding: 6px;
+  }
+  div#find:hover div#browseList {
+    display: block;
+  }
+
+div#suggestTab {
+  z-index: 20;
+  position: absolute;
+  background-color: #CCCCCC;
+  width: 840px;
+  display: none;
+}
+
+div#content {
+  margin-bottom: 32px;
+  padding: 6px 32px 8px;
+  background-color: #F0F0F0; /*bg color*/
+}
+
+div#footer {
+  background-color: #F0F0F0; /*bg color*/
+  padding: 6px 32px 8px;
+  text-align: center;
+}
+  img#xhtml {
+    vertical-align: middle;
+  }
