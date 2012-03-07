@@ -50,7 +50,7 @@
   <body>
     
     <div id="userBox"> 
-        <div>Hello, temp user!</div>
+        <div>Hello, 				<? session_start();		echo $_SESSION['username'] ?>!</div>		<a href="login/logout.php">Logout</a>
     </div>
 
     <!-- HEADER START -->
