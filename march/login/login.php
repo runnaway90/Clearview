@@ -27,7 +27,7 @@ $passwords_match=TRUE;
 $username = '';
 if (isLoggedIn()) 
 	{
-	header('Location: memberzone.php');
+	header('Location: ../main.php');
 	}
 else
 	{
@@ -90,7 +90,7 @@ else
 			$_SESSION['username'] = $username;
 			//$username = "";
 			validateUser(); //sets the session data for this user
-			header('Location: memberzone.php');
+			header('Location: ../main.php');
 			}
 		
 		/*if($hash != $userData['password']) //incorrect password
