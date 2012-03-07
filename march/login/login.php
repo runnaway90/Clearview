@@ -88,20 +88,9 @@ else
 			&& ($passwords_match==TRUE))
 			{
 			$_SESSION['username'] = $username;
-			//$username = "";
 			validateUser(); //sets the session data for this user
 			header('Location: ../main.php');
 			}
-		
-		/*if($hash != $userData['password']) //incorrect password
-			{
-			header('Location: login.php');
-			exit();
-			}
-		else
-			{
-			validateUser(); //sets the session data for this user
-			}*/
 			
 		}
 ?>
