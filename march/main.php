@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -9,8 +9,8 @@
     <meta name="keywords" content="student, societies, Edinburgh" />
     <title>Clearview | some page</title> 
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <?php
-        if (isset($_GET['l'])) {
+    <?php		error_reporting(E_ALL ^ E_NOTICE); // Error report notice OFF
+        		if (isset($_GET['l'])) {
           if ($_GET['l']=='pers') {
             function showContent () {
               include 'books.php';
