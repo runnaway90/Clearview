@@ -4,10 +4,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Clearview is a platform for bla bla blas" />
-    <meta name="keywords" content="student, societies, Edinburgh" />
-    <title>Clearview | some page</title> 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Clearview is a platform for bla bla blas" />
+    <meta name="keywords" content="student, societies, Edinburgh" />
+    <title>Clearview | some page</title> 
     <link rel="stylesheet" href="style.css" type="text/css" />    <script type="text/javascript" src="script.js"></script>
     <?php		error_reporting(E_ALL ^ E_NOTICE); // Error report notice OFF
         		if (isset($_GET['l'])) {
@@ -48,16 +48,15 @@
   </head>
   
   <body>
-    
-    <div id="userBox"> 
-        <div>Hello, 				<? session_start();		echo $_SESSION['username'] ?>!</div>		<a href="login/logout.php">Logout</a>
+    <div id="userBox"> 
+        <div>            Hello, <? session_start(); echo $_SESSION['username'] ?>!            <a href="login/logout.php">Logout</a>        </div>
     </div>
 
     <!-- HEADER START -->
     <div id="header">
     
       <div id="home">
-        <a href="index.php" tabindex="10">Home</a>
+        <a href="main.php" tabindex="10">Home</a>
       </div>
       
       <div id="pers">
@@ -68,7 +67,7 @@
             }
           }
         ?>
-        <a href="index.php?l=pers" tabindex="11">Personal</a>
+        <a href="main.php?l=pers" tabindex="11">Personal</a>
       </div>
       
       <div id="find">
@@ -85,7 +84,7 @@
           <form action="main.php" method="get"><div>
             <input id="q" name="q" type="text" value=
               "<?php echo isset($_GET['q'])?$_GET['q']:'Find...'; ?>" 
-            tabindex="12" onfocus="qFocus();"/>
+            tabindex="12" onfocus="qFocus();" onblur="qBlur();" />
             <button id="reset" type="reset" value="X"></button>
             <button id="search" type="submit" value="GO" tabindex="13"></button>
           </div></form>
@@ -111,4 +110,4 @@
     
   </body>
   
-</html>
+</html>
