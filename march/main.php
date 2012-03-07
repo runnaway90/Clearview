@@ -8,7 +8,7 @@
     <meta name="description" content="Clearview is a platform for bla bla blas" />
     <meta name="keywords" content="student, societies, Edinburgh" />
     <title>Clearview | some page</title> 
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />    <script type="text/javascript" src="script.js"></script>
     <?php		error_reporting(E_ALL ^ E_NOTICE); // Error report notice OFF
         		if (isset($_GET['l'])) {
           if ($_GET['l']=='pers') {
@@ -82,10 +82,10 @@
               <button type="button" class="butt">Venues</button>
             </div>
           </div>
-          <form action="index.php" method="get"><div>
+          <form action="main.php" method="get"><div>
             <input id="q" name="q" type="text" value=
               "<?php echo isset($_GET['q'])?$_GET['q']:'Find...'; ?>" 
-            tabindex="12" />
+            tabindex="12" onfocus="qFocus();"/>
             <button id="reset" type="reset" value="X"></button>
             <button id="search" type="submit" value="GO" tabindex="13"></button>
           </div></form>
