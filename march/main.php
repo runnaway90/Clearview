@@ -49,7 +49,7 @@
   
   <body>
     <div id="userBox"> 
-        <div>            Hello, <? session_start(); echo $_SESSION['username'] ?>!            <a href="login/logout.php">Logout</a>        </div>
+        <div>            <?php                require_once('login/login_functions.php');                session_start();                if (!isLoggedIn()) {                     echo 'Please <a href="login/login.php">login</a>';                }                else {                   echo 'Hello, '.$_SESSION['username'].'!';                   echo '<a href="login/logout.php">Logout</a>';                }            ?>                                </div>
     </div>
 
     <!-- HEADER START -->
