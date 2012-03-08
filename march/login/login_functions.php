@@ -16,7 +16,7 @@ function isLoggedIn()
 function logout()
 {
     $_SESSION = array(); //destroy all of the session variables
-    session_destroy();
+    session_destroy();		 setcookie("clearview_user", NULL, time()-3600);     setcookie("clearview_pass", NULL, time()-3600); 
 }
 
 //make sure that the data is protected from code injection
