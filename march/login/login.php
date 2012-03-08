@@ -159,8 +159,8 @@ else
 	<? if (($passwords_match==FALSE)&&($username_valid==TRUE)&&($username_not_empty==TRUE)) echo '<font color="red">Incorrect password.</font><br />'; ?>
 	
 	</form>
-	<?/*Not Registered yet? <a href = "register.php">Create an account.</a>	<br /> 
-	<div id="fb-root"></div>
+	Not Registered yet? <a href = "register.php">Create an account.</a>	<br /> 
+	<?/*<div id="fb-root"></div>
       <script>
         window.fbAsyncInit = function() {
           FB.init({

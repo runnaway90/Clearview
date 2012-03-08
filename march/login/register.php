@@ -52,7 +52,7 @@ $username = secure_data($_POST['username']);
 $pass1 = secure_data($_POST['pass1']);
 $pass2 = secure_data($_POST['pass2']);
 $email = secure_data($_POST['email']);
-$email2 = secure_data($_POST['email2']);
+//$email2 = secure_data($_POST['email2']);
 $fname = secure_data($_POST['fname']);
 $lname = secure_data($_POST['lname']);
 
@@ -135,12 +135,12 @@ $passwords_match=FALSE;
 if
 ( 
 ctype_alnum($pass1) // numbers & digits only 
-/*&& (strlen($pass1)>6) // at least 7 chars 
+&& (strlen($pass1)>6) // at least 7 chars 
 && (strlen($pass1)<21) // at most 20 chars 
 && preg_match('`[A-Z]`',$pass1) // at least one upper case 
 && preg_match('`[a-z]`',$pass1) // at least one lower case 
 && preg_match('`[0-9]`',$pass1) // at least one digit 
-*/)
+)
 { 
 $password_valid=TRUE;
 }
