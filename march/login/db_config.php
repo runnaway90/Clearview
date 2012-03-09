@@ -5,5 +5,5 @@ $usertable = 'users';
 $dbhost = 'localhost';
 $dbname = 'clearview';
 $dbuser = 'root';
-$dbpass = '';
+$dbpass = '';$mem_status_user = 0;$mem_status_admin = 1;
 ?>
