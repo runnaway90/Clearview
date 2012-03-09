@@ -16,7 +16,7 @@
     <div id="header">      <div id="home">        <a href="<?php echo $tab1_link; ?>" tabindex="10">          <?php echo $tab1_title; ?>        </a>      </div>
       <div id="pers">        <?php include 'books.php'; ?>
         <a href="<?php echo $tab2_link; ?>" tabindex="11">          <?php echo $tab2_title; ?>        </a>
-      </div>
+      </div>	  
       
       <div id="find">
           <div id="browses">
