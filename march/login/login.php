@@ -116,7 +116,7 @@
 			}
 			
 			if (($username_not_empty==TRUE) && ($username_valid==TRUE) && ($password_not_empty==TRUE) && ($passwords_match==TRUE))
-			{
+			{	
 				$_SESSION['username'] = $username;
 				//$username = "";
 				$md5pass = md5($hash);
@@ -124,10 +124,11 @@
 				
 				//set remember me cookie for 30 days
 				if (isset($_POST["remember"]))
-				   setcookie("clearview_user", $_SESSION['username'], time() + (60*60*24*30));
-				setcookie("clearview_pass", "$md5pass", time() + (60*60*24*30));
-				   
-				header('Location: ../main.php');
+				{
+					setcookie("clearview_user", $_SESSION['username'], time() + (60*60*24*30),"/");
+					setcookie("clearview_pass", "$md5pass", time() + (60*60*24*30),"/");
+					header('Location: ../main.php');
+				}
 			}
 			
 				
