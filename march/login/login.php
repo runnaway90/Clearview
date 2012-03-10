@@ -90,14 +90,9 @@
 			{
 				$username_valid=FALSE;
 			}
-			else 
-			{
-				$username_valid=TRUE;
-			}
 			
 			//check if password is not empty
 			if(empty($password)) {$password_not_empty = FALSE;}
-			else {$password_not_empty = TRUE;}
 			
 			$userData = mysql_fetch_array($result, MYSQL_ASSOC);
 			$userData2 = mysql_fetch_array($result2, MYSQL_ASSOC);
