@@ -1,1 +1,1 @@
-<?phprequire_once('login/login_functions.php');session_start();if (!isLoggedIn()) {     header ('Location: intro.php');}else {    header ('Location: main.php');}?>
+<?php	require_once('login/login_functions.php');	session_start();	if (!isLoggedIn()) 	{ 		header ('Location: intro.php');	}	else 	{		header ('Location: main.php');	}?>

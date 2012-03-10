@@ -112,20 +112,29 @@ a.signin.menu-open span {
 #signin_menu a {
     color:#6AC;
 }
-#signin_menu label {
+#signin_menu label 
+{
     font-weight:normal;
 }
-#signin_menu p.remember {
+
+#signin_menu p.remember 
+{
     padding:10px 0;
 }
-#signin_menu p.forgot, #signin_menu p.complete {
+
+#signin_menu p.forgot, #signin_menu p.complete 
+{
     clear:both;
     margin:5px 0;
 }
-#signin_menu p a {
+
+#signin_menu p a 
+{
     color:#27B!important;
 }
-#signin_submit {
+
+#signin_submit 
+{
     -moz-border-radius:4px;
     -webkit-border-radius:4px;
     background:#39d url('images/bg-btn-blue.png') repeat-x scroll 0 0;
@@ -137,11 +146,15 @@ a.signin.menu-open span {
     margin:0 5px 0 0;
     font-weight:bold;
 }
-#signin_submit::-moz-focus-inner {
+
+#signin_submit::-moz-focus-inner 
+{
 padding:0;
 border:0;
 }
-#signin_submit:hover, #signin_submit:focus {
+
+#signin_submit:hover, #signin_submit:focus 
+{
     background-position:0 -5px;
     cursor:pointer;
 }
