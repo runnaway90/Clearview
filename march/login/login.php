@@ -122,8 +122,8 @@
 				{
 					setcookie("clearview_user", $_SESSION['username'], time() + (60*60*24*30),"/");
 					setcookie("clearview_pass", "$md5pass", time() + (60*60*24*30),"/");
-					header('Location: ../main.php');
 				}
+				header('Location: ../main.php');
 			}
 			
 				
