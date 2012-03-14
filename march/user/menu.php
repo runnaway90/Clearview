@@ -1,0 +1,1 @@
+<div id="menu">  <div>    <a href="main.php?l=socs">Societies</a>    <a href="main.php?l=events">Events</a>    <a href="main.php?l=photos">Photos</a>     <a href="main.php?l=blogposts">Blog posts</a>     <a href="main.php?l=articles">Articles</a>     <a href="main.php?l=venues">Venues</a>  </div> </div> 
