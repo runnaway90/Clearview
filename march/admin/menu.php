@@ -1,0 +1,1 @@
+<div id="admin_menu">  <div>    <a href="main.php?l=soc_page">Homepage</a>    <a href="main.php?l=soc_events">Events</a>     <a href="main.php?l=soc_albums">Albums</a>    <a href="main.php?l=soc_blog">Blog</a>     <a href="main.php?l=soc_members">Members</a>    <a href="main.php?l=soc_settings">Settings</a>  </div> </div> 
