@@ -121,13 +121,13 @@ body {
     float: left;
     width: 34px; /*resw*/
     height: 34px; /*imgh*/
-    background-image: url('reset.png');
+    background-image: url('../images/reset.png');
   }
   #search {
     float: right; /*-> stick to right*/
     width: 52px; /*imgw*/
     height: 34px; /*imgh*/
-    background-image: url('glass.png');
+    background-image: url('../images/glass.png');
   }
   #find:hover #q, #find:hover #reset, #find:hover #search {
     background-color: #AACCDD; /*header hover colour*/
