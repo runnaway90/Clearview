@@ -13,7 +13,7 @@
 	*/
 
 	require_once('login_functions.php');
-	require_once('db_config.php');
+	require_once('../database/db_config.php');
 	session_start(); //must call session_start before using any $_SESSION variables
 
 	//validation variables
