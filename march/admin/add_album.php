@@ -73,15 +73,15 @@
 			$time = $row['time'];
 			$place = $row['place'];
 			
-			?>
-			<form action="edit.php?l=check_album_form" method="POST">
+			
+			/*<form action="edit.php?l=check_album_form" method="POST">
 			Album name:  <input type="text" id="name" name="name" value="<? if(isset($name)) echo $name; ?>"> <br /><br />
 			Description:  <input type="text" id="description" name="description" value="<? if(isset($description)) echo $description; ?>"> <br /><br />
 			Date:  <input type="text" id="time" name="time" value="<? if(isset($time)) echo $time; ?>"> <br /><br />
 			Place: <input type="text" id="place" name="place" value="<? if(isset($place)) echo $place; ?>"> <br /><br />
 			<input type="submit" value="Submit"><br /><br />
-			</form>
-			<?
+			</form>*/
+			
 			//header("Location: ../index.php?l=soc_albums");
 		}
 		
