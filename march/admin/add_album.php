@@ -1,5 +1,5 @@
 <?php 
-	include 'database/db_config.php'; // path from main.php
+	include 'database/db_config.php'; // path from index.php
 	$conn = mysql_connect($dbhost, $dbuser, $dbpass);
 	mysql_select_db($dbname, $conn);
 	// get society_id
@@ -142,7 +142,7 @@ Add an album:
 		<? if ($time_valid == FALSE) echo '<font color="red">Please enter valid number of available places > 0 and integer</font><br />'; ?>
 			<?php //end of error messages ?>
 
-<form action="main.php?l=add_album" method="POST">
+<form action="index.php?l=add_album" method="POST">
 	Album name:  <input type="text" id="name" name="name" value="<? if(isset($name)) echo $name; ?>"> <br /><br />
     Description:  <input type="text" id="description" name="description" value="<? if(isset($description)) echo $description; ?>"> <br /><br />
     Time:  <input type="text" id="time" name="time" value="<? if(isset($time)) echo $time; ?>"> <br /><br />
