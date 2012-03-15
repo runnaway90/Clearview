@@ -116,7 +116,6 @@
 			$query = "INSERT INTO $albumtable ( name, description, time, place, society_id)
 					VALUES ('$name' , '$description' , '$time', '$place', '$society_id');";
 			mysql_query($query);
-			header('Location: success.php');
 		}
 	}
 ?>
