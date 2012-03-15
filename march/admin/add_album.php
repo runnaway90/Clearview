@@ -49,74 +49,115 @@
 		}
 		return $retval;
 	}
-	
-	if (isset($_POST['name']))
+	if(isset($_GET['action'])&&isset($_GET['album_id']))
 	{
-		$name = $_POST['name'];
-		//$description = $_POST['description'];
-		$time = $_POST['time'];
-		$place = $_POST['place'];
-		
-		//no point I think
-		if (!empty($_POST['description'])) $description = $_POST['description'];
-		else $description = shorten_string($description, 50); 
-		
-		
-		
-		
-		// CHECKING INPUT DATA :::::::
-		
-			// check if title is empty
-			if (empty($name)) $name_not_empty = FALSE;
-			
-			// check is title is valid < 140 chars
-			if (strlen($name) > 100) $name_valid = FALSE;
-			
-			//privacy_level is empty
-			if (empty($description_not_empty)) $description_not_empty = FALSE;
-			
-			//time is empty
-			if (empty($time)) $time_not_empty = FALSE;
-			
-			// time is valid
-			//add the validation of the date or calendar here
-			
-			
-			// society is not valid && society exists
-			if ($society_id == 0) $society_id_valid = FALSE;
-			else
-			{
-				if (empty($society_name)) $society_exists = FALSE;  
-			}
-			
-			//available places not empty
-			if (empty($place)) $place_not_empty = FALSE;
-			
-			//available places integer positive
-			if (strlen($place) > 100) $name_valid = FALSE;
-		
-		
-		
-		// END OF CHECKING INPUT DATA ::::::::
-		
-		if ($name_not_empty == TRUE &&	
-			$name_valid == TRUE && 
-			$description_not_empty == TRUE &&
-			$place_not_empty == TRUE &&
-			$description_valid == TRUE &&
-			$place_valid == TRUE &&
-			$society_id_valid == TRUE && 
-			$society_exists == TRUE && 
-			$time_not_empty == TRUE &&  	
-			$time_valid == TRUE
-			)
+		$action = $_GET['action'];
+		$album_id = $_GET['album_id'];
+		if($_GET['action'] == 'delete')
 		{
-			echo $name_empty.$name_valid;
-			$query = "INSERT INTO $albumtable ( name, description, time, place, society_id)
-					VALUES ('$name' , '$description' , '$time', '$place', '$society_id');";
+			$query =   "DELETE 
+						FROM $albumtable
+						WHERE id = '$album_id'";
 			mysql_query($query);
+			header("Location: ../main.php?l=soc_albums");
 		}
+		if($_GET['action'] == 'edit')
+		{
+			$query =   "SELECT * 
+						FROM $albumtable
+						WHERE id = '$album_id'";
+			$result = mysql_query($query);
+			$row = mysql_fetch_array($result);
+			$name = $row['name'];
+			$description = $row['description'];
+			$time = $row['time'];
+			$place = $row['place'];
+			
+			?>
+			<form action="edit.php?l=check_album_form" method="POST">
+			Album name:  <input type="text" id="name" name="name" value="<? if(isset($name)) echo $name; ?>"> <br /><br />
+			Description:  <input type="text" id="description" name="description" value="<? if(isset($description)) echo $description; ?>"> <br /><br />
+			Date:  <input type="text" id="time" name="time" value="<? if(isset($time)) echo $time; ?>"> <br /><br />
+			Place: <input type="text" id="place" name="place" value="<? if(isset($place)) echo $place; ?>"> <br /><br />
+			<input type="submit" value="Submit"><br /><br />
+			</form>
+			<?
+			//header("Location: ../main.php?l=soc_albums");
+		}
+		
+		
 	}
+	else
+		if (isset($_POST['name']))
+		{
+			$name = $_POST['name'];
+			//$description = $_POST['description'];
+			$time = $_POST['time'];
+			$place = $_POST['place'];
+		
+			//no point I think
+			if (!empty($_POST['description'])) $description = $_POST['description'];
+			else $description = shorten_string($description, 50); 
+		
+		
+		
+		
+			// CHECKING INPUT DATA :::::::
+		
+				// check if title is empty
+				if (empty($name)) $name_not_empty = FALSE;
+			
+				// check is title is valid < 140 chars
+				if (strlen($name) > 100) $name_valid = FALSE;
+			
+				//privacy_level is empty
+				if (empty($description_not_empty)) $description_not_empty = FALSE;
+			
+				//time is empty
+				if (empty($time)) $time_not_empty = FALSE;
+			
+				// time is valid
+				//add the validation of the date or calendar here
+			
+			
+				// society is not valid && society exists
+				if ($society_id == 0) $society_id_valid = FALSE;
+				else
+				{
+					if (empty($society_name)) $society_exists = FALSE;  
+				}		
+			
+				//available places not empty
+				if (empty($place)) $place_not_empty = FALSE;
+			
+				//available places integer positive
+				if (strlen($place) > 100) $name_valid = FALSE;
+		
+		
+		
+			// END OF CHECKING INPUT DATA ::::::::
+		
+			if 
+			(
+				$name_not_empty == TRUE &&	
+				$name_valid == TRUE && 
+				$description_not_empty == TRUE &&
+				$place_not_empty == TRUE &&
+				$description_valid == TRUE &&
+				$place_valid == TRUE &&
+				$society_id_valid == TRUE && 
+				$society_exists == TRUE && 
+				$time_not_empty == TRUE &&  	
+				$time_valid == TRUE
+			)
+			{
+				echo $name_empty.$name_valid;
+				$query =   "INSERT INTO $albumtable ( name, description, time, place, society_id)
+							VALUES ('$name' , '$description' , '$time', '$place', '$society_id');";
+				mysql_query($query);
+			}
+		}
+	
 ?>
 <p> 
 
