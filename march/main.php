@@ -6,7 +6,7 @@
 		<meta name="description" content="Clearview is a platform for bla bla blas" />
 		<meta name="keywords" content="student, societies, Edinburgh" />
 		<title>Clearview <?php showTitle(); ?></title> 
-		<link rel="stylesheet" href="styles/style.css" type="text/css" />				<style type="text/css"><?php                 if (isset($selStyle))                    echo $selStyle.'{ background-color: #DDCCAA; }';         ?></style>
+		<link rel="stylesheet" href="styles/style.css" type="text/css" />				<style type="text/css"><?php                 if (isset($selStyle))                    echo $selStyle.'{ background-color: #AACCDD; }';         ?></style>
 	</head>
 	<body>		<div id="userBox"> 
 			<div> <?php userBox(); ?> </div>
@@ -16,13 +16,13 @@
 			<div id="pers">				<?php                     if ($_SESSION['adminview']) { include 'admin/books.php'; }                    else { include 'user/books.php'; }                 ?>
 				<a href="<?php echo $tab2_link; ?>" tabindex="11">					<?php echo $tab2_title; ?>				</a>
 			</div>	 
-			<div id="find">
-				<form action="<?php echo $tab3_link; ?>" method="get">				<div>
+			<div id="find" onclick="document.getElementById('q').focus();">
+				<form action="<?php echo $tab3_link; ?>" method="get">                  <div>
 					<input id="q" name="q" type="text" value=
 						"<?php echo isset($_GET['q'])?$_GET['q']:'Find...'; ?>" 						tabindex="12" onfocus="qFocus();" onblur="qBlur();" />
-					<button id="reset" type="reset" value="X"></button>
+					<div id="reset" onclick="qReset();" value="X"></div>
 					<button id="search" type="submit" value="GO" tabindex="13"></button>
-				</div>				</form>
+				  </div>                </form>
 			</div>
 		</div>
 		<!-- HEADER END -->		
