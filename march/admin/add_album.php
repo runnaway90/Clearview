@@ -78,7 +78,7 @@
 			if (empty($time)) $time_not_empty = FALSE;
 			
 			// time is valid
-			//if (!is_numeric($price) || $price < 0) $price_valid = FALSE;
+			//add the validation of the date or calendar here
 			
 			
 			// society is not valid && society exists
