@@ -23,7 +23,8 @@
 	
 		if (empty ($result_arr)) $society_name = '';
 		else $society_name = $result_arr[0];
-	}
+	}	
+	
 	$society_id_valid = TRUE;				// see if society_id != 0 -- so that is admin of a society
 	$society_exists = TRUE;	
 	$name_not_empty = TRUE;	
@@ -126,23 +127,22 @@ You are creating an event for <? echo $society_name; ?>
 <p>
 Add an album:
 	<?php // error messages if any ?>
-		<? echo $time;?>
-		<? if ($name_not_empty == FALSE) echo '<font color="red">Please enter title</font><br />'; ?>
-		<? if ($name_valid == FALSE) echo '<font color="red">Please enter valid title</font><br />'; ?>
-		<? if ($description_not_empty == FALSE) echo '<font color="red">Please enter privacy level</font><br />'; ?>
-		<? if ($place_not_empty == FALSE) echo '<font color="red">Please enter price</font><br />'; ?>
-		<? if ($place_valid == FALSE) echo '<font color="red">Please enter valid price</font><br />'; ?>
-		<? if ($description_valid == FALSE) echo '<font color="red">Please enter valid body</font><br />'; ?>
+		<? if ($name_not_empty == FALSE) echo '<font color="red">Please enter a name for the album</font><br />'; ?>
+		<? if ($name_valid == FALSE) echo '<font color="red">Please enter a valid name</font><br />'; ?>
+		<? if ($description_not_empty == FALSE) echo '<font color="red">Please enter album description</font><br />'; ?>
+		<? if ($place_not_empty == FALSE) echo '<font color="red">Please enter a place</font><br />'; ?>
+		<? if ($place_valid == FALSE) echo '<font color="red">Please enter a valid place</font><br />'; ?>
+		<? if ($description_valid == FALSE) echo '<font color="red">Please enter valid description</font><br />'; ?>
 		<? if ($society_id_valid == FALSE) echo '<font color="red">Please enter valid society_id</font><br />'; ?>
 		<? if ($society_exists == FALSE) echo '<font color="red">I am sorry but the society you are admin does not exist. Please contact webmaster!</font><br />'; ?>
-		<? if ($time_not_empty == FALSE) echo '<font color="red">Please enter the number of available places</font><br />'; ?>
-		<? if ($time_valid == FALSE) echo '<font color="red">Please enter valid number of available places > 0 and integer</font><br />'; ?>
+		<? if ($time_not_empty == FALSE) echo '<font color="red">Please enter a date</font><br />'; ?>
+		<? if ($time_valid == FALSE) echo '<font color="red">Please enter a valid date</font><br />'; ?>
 			<?php //end of error messages ?>
 
 <form action="main.php?l=add_album" method="POST">
 	Album name:  <input type="text" id="name" name="name" value="<? if(isset($name)) echo $name; ?>"> <br /><br />
     Description:  <input type="text" id="description" name="description" value="<? if(isset($description)) echo $description; ?>"> <br /><br />
-    Time:  <input type="text" id="time" name="time" value="<? if(isset($time)) echo $time; ?>"> <br /><br />
+    Date:  <input type="text" id="time" name="time" value="<? if(isset($time)) echo $time; ?>"> <br /><br />
     Place: <input type="text" id="place" name="place" value="<? if(isset($place)) echo $place; ?>"> <br /><br />
    <input type="submit" value="Submit"><br /><br />
 
