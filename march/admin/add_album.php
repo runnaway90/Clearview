@@ -74,14 +74,12 @@
 			//privacy_level is empty
 			if (empty($description_not_empty)) $description_not_empty = FALSE;
 			
-			//price is empty
+			//time is empty
 			if (empty($time)) $time_not_empty = FALSE;
 			
-			// price is numerical
-			//if (!is_numeric($price) || $price < 0) $price_valid = FALSE;
+			// time is valid
+			//add the validation of the date or calendar here
 			
-			// body is valid 
-			// don't know what to test
 			
 			// society is not valid && society exists
 			if ($society_id == 0) $society_id_valid = FALSE;
@@ -116,7 +114,6 @@
 			$query = "INSERT INTO $albumtable ( name, description, time, place, society_id)
 					VALUES ('$name' , '$description' , '$time', '$place', '$society_id');";
 			mysql_query($query);
-			header('Location: success.php');
 		}
 	}
 ?>
