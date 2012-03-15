@@ -74,14 +74,12 @@
 			//privacy_level is empty
 			if (empty($description_not_empty)) $description_not_empty = FALSE;
 			
-			//price is empty
+			//time is empty
 			if (empty($time)) $time_not_empty = FALSE;
 			
-			// price is numerical
+			// time is valid
 			//if (!is_numeric($price) || $price < 0) $price_valid = FALSE;
 			
-			// body is valid 
-			// don't know what to test
 			
 			// society is not valid && society exists
 			if ($society_id == 0) $society_id_valid = FALSE;
