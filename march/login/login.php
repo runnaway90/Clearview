@@ -25,7 +25,7 @@
 
 	if (isLoggedIn()) 
 	{
-		header('Location: ../main.php');
+		header('Location: ../index.php');
 	}
 	else
 	{ 
@@ -50,7 +50,7 @@
 				{
 					$_SESSION['username'] = $userData['username'];
 					validateUser();
-					header('Location: ../main.php');
+					header('Location: ../index.php');
 				}
 			}
 			//$hash = hash('sha256', $userData['salt'] . hash('sha256', $password) );
@@ -123,7 +123,7 @@
 					setcookie("clearview_user", $_SESSION['username'], time() + (60*60*24*30),"/");
 					setcookie("clearview_pass", "$md5pass", time() + (60*60*24*30),"/");
 				}
-				header('Location: ../main.php');
+				header('Location: ../index.php');
 			}
 			
 				

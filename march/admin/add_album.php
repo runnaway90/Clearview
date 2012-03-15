@@ -1,5 +1,5 @@
 <?php 
-	include 'database/db_config.php'; // path from main.php
+	include 'database/db_config.php'; // path from index.php
 	$conn = mysql_connect($dbhost, $dbuser, $dbpass);
 	mysql_select_db($dbname, $conn);
 	// get society_id
@@ -59,7 +59,7 @@
 						FROM $albumtable
 						WHERE id = '$album_id'";
 			mysql_query($query);
-			header("Location: ../main.php?l=soc_albums");
+			header("Location: ../index.php?l=soc_albums");
 		}
 		if($_GET['action'] == 'edit')
 		{
@@ -82,7 +82,7 @@
 			<input type="submit" value="Submit"><br /><br />
 			</form>
 			<?
-			//header("Location: ../main.php?l=soc_albums");
+			//header("Location: ../index.php?l=soc_albums");
 		}
 		
 		
@@ -180,7 +180,7 @@ Add an album:
 		<? if ($time_valid == FALSE) echo '<font color="red">Please enter a valid date</font><br />'; ?>
 			<?php //end of error messages ?>
 
-<form action="main.php?l=add_album" method="POST">
+<form action="index.php?l=add_album" method="POST">
 	Album name:  <input type="text" id="name" name="name" value="<? if(isset($name)) echo $name; ?>"> <br /><br />
     Description:  <input type="text" id="description" name="description" value="<? if(isset($description)) echo $description; ?>"> <br /><br />
     Date:  <input type="text" id="time" name="time" value="<? if(isset($time)) echo $time; ?>"> <br /><br />
