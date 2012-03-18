@@ -1,1 +1,1 @@
-echo 'sdsdas'
+<?php echo 'sdsdas' ?>
