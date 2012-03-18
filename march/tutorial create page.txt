@@ -1,0 +1,29 @@
+define $path
+require check_in
+specify view (user/admin)
+require header
+
+define page settings:
+    showMetaDescription()
+    showMetaKeywords()
+    showTitle()
+    showStyleLinks()
+    
+    showHeader()
+    showContent()
+
+require page_struct
+
+
+
+
+
+e.g.
+
+    $path = '../';
+    require_once($path.'check_in.php');
+    require_once($path.'header.php');
+    
+    etc.
+    
+    include $path.'page_struct.php';
