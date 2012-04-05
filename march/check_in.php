@@ -18,7 +18,7 @@
         $isAdmin = $_SESSION['userlevel'] == $mem_status_admin;
     }
     else if (isset($_COOKIE['clearview_user']) && isset($_COOKIE['clearview_pass']))
-    {
+    {   // this means if user comes back and we need to log him in with "remember me"
         $username = $_COOKIE['clearview_user'];
        
         $query = 	"SELECT password, username, membership_status_id

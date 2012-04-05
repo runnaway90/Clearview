@@ -1,5 +1,5 @@
 <?php 
-	include 'login/db_config.php';
+	include 'database/db_config.php';
 	
 	$title_not_empty = TRUE;	
 	$title_valid = TRUE; 					// not more than 140 chars
@@ -107,8 +107,10 @@
 	}
 ?>
 <p> 
-
-You are an admin of the society: <? echo $society_name; ?>
+<?php 
+    if (isset($society_name)) echo 'You are an admin of the society: '.$society_name; 
+    else echo 'You are not an admin of any society.';
+?>
 
 </p>
 

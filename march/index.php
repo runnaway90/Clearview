@@ -1,1 +1,1 @@
-<?php    require_once('check_in.php');    require_once('header.php');        if (isLoggedIn()) header('Location: user/');    else header('Location: intro.php');?>
+<?php    require_once('check_in.php');        if (isLoggedIn()) header('Location: user/');    else header('Location: intro.php');?>
